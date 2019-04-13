@@ -1,0 +1,29 @@
+.data-grid {
+    &, * {
+        position: relative;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    background-color: #CCC;
+    border: solid 10px #999;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    .header {
+        display: flex;
+        border-bottom: solid thin #999;
+        .column {
+            display: flex;
+            border-right: solid thin #999;
+            padding: 4px;
+            &:last-child {
+                border-right: none;
+            }
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    
+}
