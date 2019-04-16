@@ -1,0 +1,24 @@
+.my-tabs {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+.my-tab-button {
+    background-color: #6699CC;
+    color: #000;
+    border-radius: 0;
+}
+.my-tab-button.active {
+    border-radius: 0 !important;
+}
+.my-tab-button::before {
+    content: "⬛";
+}
+.my-tab-button.active::before {
+    content: "⬜";
+}
+.my-tab-view {
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 2px 1px #369;
+}
